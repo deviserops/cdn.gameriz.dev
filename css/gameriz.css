@@ -1,6 +1,7 @@
 /* Set background image */
+
 .gamer-background {
-    background-image: url('../../images/default/gamer-background.jpg');
+    background-image: url('../images/default/gamer-background.jpg');
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
@@ -12,7 +13,7 @@
 }
 
 .profile-background {
-    background-image: url('../../images/default/gamer-background.jpg');
+    background-image: url('../images/default/gamer-background.jpg');
     margin-top: calc(var(--mdb-card-spacer-y) * -1);
     margin-right: calc(var(--mdb-card-spacer-y) * -1);
     margin-left: calc(var(--mdb-card-spacer-y) * -1);
@@ -43,7 +44,7 @@
 
 /* Steam widget page */
 .steam-widget-container {
-    background: url("../../images/steam/widget-bg.jpg") no-repeat center center fixed;
+    background: url("../images/steam/widget-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

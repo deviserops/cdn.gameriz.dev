@@ -1,6 +1,7 @@
 /*Full Site*/
-* {
-    --mdb-body-font-weight: 300;
+/*Full Site*/
+body {
+    font-family: 'Averia Sans Libre', cursive;
 }
 
 /* Home arrow sign */
@@ -47,7 +48,7 @@
 
 /*Home Page*/
 .home_banner_section {
-    background-image: url(../../images/banner-bg.png);
+    background-image: url(../images/banner-bg.png);
     padding-bottom: 100px;
     background-size: cover;
 }
@@ -130,7 +131,7 @@
 }
 
 .home_video_section {
-    background-image: url(../../images/video-bg.png);
+    background-image: url(../images/video-bg.png);
 }
 
 .home_video_section .video_text_2 {
