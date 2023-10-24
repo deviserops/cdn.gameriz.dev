@@ -28,7 +28,7 @@ var gameriz = {
         }
 
         // for gamer list
-        let list_element = $('.follow_list_' + data.pk)
+        let list_element = $(document).find('.follow_list_' + data.param.pk)
         if (list_element.length) {
             let follow_text = list_element.data('follow-text').trim()
             let unfollow_text = list_element.data('unfollow-text').trim()
@@ -47,18 +47,17 @@ var gameriz = {
 $(document).ready(function () {
     gameriz.ready()
     var csrf_token = $(document).find('meta[name="csrf-token"]').attr('content')
-    justify.setup({
-        underfieldError: false,
+    let noty = new Notify()
+    new Justify({
+        justifyError: true,
         showBorderError: true,
-        separateMessage: true,
+        underfieldError: true,
         csrfTokenName: 'csrfmiddlewaretoken',
         csrfToken: csrf_token,
-        justifyError: true,
         customJustify: function (type, message) {
-            notification(type, message)
+            noty.show(type, message)
         }
-    });
-    notify.setup()
+    })
 })
 
 function notification(type, message) {
