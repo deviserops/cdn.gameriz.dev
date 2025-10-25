@@ -1,1 +1,0 @@
-$(document).ready(function(){var r=$(document).find('meta[name="csrf-token"]').attr("content");let e=new Notify;new Justify({justifyError:!0,showBorderError:!0,underfieldError:!0,csrfTokenName:"csrfmiddlewaretoken",csrfToken:r,customJustify:function(r,n){e.show(r,n)}})});
